@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="GPIO_Pin4"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="STEPPERA4_Pin"/>
+			<item value="STEPPERA3_Pin"/>
+			<item value="STEPPERA2_Pin"/>
+			<item value="STEPPERA1_Pin"/>
+			<item value="Port"/>
+			<item value="a4_GPIO_Port"/>
+			<item value="a3_GPIO_Port"/>
+			<item value="a2_GPIO_Port"/>
+			<item value="a1_GPIO_Port"/>
+			<item value="STEPPER_A4_GPIO_Port"/>
+			<item value="STEPPER_A3_GPIO_Port"/>
+			<item value="STEPPER_A2_GPIO_Port"/>
+			<item value="STEPPER_A1_GPIO_Port"/>
+			<item value="ITEM"/>
+			<item value="STEPPERA4_GPIO_Port"/>
+		</list>
+		<list key="replacehistory">
+			<item value="GPIO_Pin4"/>
+			<item value="GPIO_Pin3"/>
+			<item value="GPIO_Pin2"/>
+			<item value="GPIO_Pin1"/>
+			<item value="Pin"/>
+			<item value="GPIO_Port4"/>
+			<item value="GPIO_Port3"/>
+			<item value="GPIO_Port2"/>
+			<item value="GPIO_Port1"/>
+			<item value="a4_GPIO_Port"/>
+			<item value="a3_GPIO_Port"/>
+			<item value="a2_GPIO_Port"/>
+			<item value="a1_GPIO_Port"/>
+			<item value="MOTOR"/>
+			<item value="STEPPER_A4_GPIO_Port"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1002"/>
+		<item key="DIALOG_Y_ORIGIN" value="352"/>
+		<item key="DIALOG_WIDTH" value="414"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

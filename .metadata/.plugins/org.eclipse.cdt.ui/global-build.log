@@ -1,0 +1,109 @@
+00:09:04 **** Incremental Build of configuration Debug for project Robotic_Hand ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:279,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Core/Src/main.c: In function 'Stepper_SetHalfStepState':
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:93:36: warning: conversion from 'short unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '256' to '0' [-Woverflow]
+   93 | #define GPIO_PIN_8                 ((uint16_t)0x0100)  /* Pin 8 selected    */
+      |                                    ^
+../Core/Inc/main.h:92:24: note: in expansion of macro 'GPIO_PIN_8'
+   92 | #define STEPPER_A1_Pin GPIO_PIN_8
+      |                        ^~~~~~~~~~
+../Core/Src/main.c:334:37: note: in expansion of macro 'STEPPER_A1_Pin'
+  334 |                         GPIO_Pin1 = STEPPER_A1_Pin;
+      |                                     ^~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:94:36: warning: conversion from 'short unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '512' to '0' [-Woverflow]
+   94 | #define GPIO_PIN_9                 ((uint16_t)0x0200)  /* Pin 9 selected    */
+      |                                    ^
+../Core/Inc/main.h:94:24: note: in expansion of macro 'GPIO_PIN_9'
+   94 | #define STEPPER_A2_Pin GPIO_PIN_9
+      |                        ^~~~~~~~~~
+../Core/Src/main.c:335:37: note: in expansion of macro 'STEPPER_A2_Pin'
+  335 |                         GPIO_Pin2 = STEPPER_A2_Pin;
+      |                                     ^~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:95:36: warning: conversion from 'short unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '1024' to '0' [-Woverflow]
+   95 | #define GPIO_PIN_10                ((uint16_t)0x0400)  /* Pin 10 selected   */
+      |                                    ^
+../Core/Inc/main.h:96:24: note: in expansion of macro 'GPIO_PIN_10'
+   96 | #define STEPPER_A3_Pin GPIO_PIN_10
+      |                        ^~~~~~~~~~~
+../Core/Src/main.c:336:37: note: in expansion of macro 'STEPPER_A3_Pin'
+  336 |                         GPIO_Pin3 = STEPPER_A3_Pin;
+      |                                     ^~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:96:36: warning: conversion from 'short unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '2048' to '0' [-Woverflow]
+   96 | #define GPIO_PIN_11                ((uint16_t)0x0800)  /* Pin 11 selected   */
+      |                                    ^
+../Core/Inc/main.h:98:24: note: in expansion of macro 'GPIO_PIN_11'
+   98 | #define STEPPER_A4_Pin GPIO_PIN_11
+      |                        ^~~~~~~~~~~
+../Core/Src/main.c:337:37: note: in expansion of macro 'STEPPER_A4_Pin'
+  337 |                         GPIO_Pin4 = STEPPER_A4_Pin;
+      |                                     ^~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:93:36: warning: conversion from 'short unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '256' to '0' [-Woverflow]
+   93 | #define GPIO_PIN_8                 ((uint16_t)0x0100)  /* Pin 8 selected    */
+      |                                    ^
+../Core/Inc/main.h:88:24: note: in expansion of macro 'GPIO_PIN_8'
+   88 | #define STEPPER_D3_Pin GPIO_PIN_8
+      |                        ^~~~~~~~~~
+../Core/Src/main.c:366:37: note: in expansion of macro 'STEPPER_D3_Pin'
+  366 |                         GPIO_Pin3 = STEPPER_D3_Pin;
+      |                                     ^~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:94:36: warning: conversion from 'short unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '512' to '0' [-Woverflow]
+   94 | #define GPIO_PIN_9                 ((uint16_t)0x0200)  /* Pin 9 selected    */
+      |                                    ^
+../Core/Inc/main.h:90:24: note: in expansion of macro 'GPIO_PIN_9'
+   90 | #define STEPPER_D4_Pin GPIO_PIN_9
+      |                        ^~~~~~~~~~
+../Core/Src/main.c:367:37: note: in expansion of macro 'STEPPER_D4_Pin'
+  367 |                         GPIO_Pin4 = STEPPER_D4_Pin;
+      |                                     ^~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:97:36: warning: conversion from 'short unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '4096' to '0' [-Woverflow]
+   97 | #define GPIO_PIN_12                ((uint16_t)0x1000)  /* Pin 12 selected   */
+      |                                    ^
+../Core/Inc/main.h:76:24: note: in expansion of macro 'GPIO_PIN_12'
+   76 | #define STEPPER_E1_Pin GPIO_PIN_12
+      |                        ^~~~~~~~~~~
+../Core/Src/main.c:374:37: note: in expansion of macro 'STEPPER_E1_Pin'
+  374 |                         GPIO_Pin1 = STEPPER_E1_Pin;
+      |                                     ^~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:98:36: warning: conversion from 'short unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '8192' to '0' [-Woverflow]
+   98 | #define GPIO_PIN_13                ((uint16_t)0x2000)  /* Pin 13 selected   */
+      |                                    ^
+../Core/Inc/main.h:78:24: note: in expansion of macro 'GPIO_PIN_13'
+   78 | #define STEPPER_E2_Pin GPIO_PIN_13
+      |                        ^~~~~~~~~~~
+../Core/Src/main.c:375:37: note: in expansion of macro 'STEPPER_E2_Pin'
+  375 |                         GPIO_Pin2 = STEPPER_E2_Pin;
+      |                                     ^~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:99:36: warning: conversion from 'short unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '16384' to '0' [-Woverflow]
+   99 | #define GPIO_PIN_14                ((uint16_t)0x4000)  /* Pin 14 selected   */
+      |                                    ^
+../Core/Inc/main.h:80:24: note: in expansion of macro 'GPIO_PIN_14'
+   80 | #define STEPPER_E3_Pin GPIO_PIN_14
+      |                        ^~~~~~~~~~~
+../Core/Src/main.c:376:37: note: in expansion of macro 'STEPPER_E3_Pin'
+  376 |                         GPIO_Pin3 = STEPPER_E3_Pin;
+      |                                     ^~~~~~~~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:100:36: warning: conversion from 'short unsigned int' to 'uint8_t' {aka 'unsigned char'} changes value from '32768' to '0' [-Woverflow]
+  100 | #define GPIO_PIN_15                ((uint16_t)0x8000)  /* Pin 15 selected   */
+      |                                    ^
+../Core/Inc/main.h:82:24: note: in expansion of macro 'GPIO_PIN_15'
+   82 | #define STEPPER_E4_Pin GPIO_PIN_15
+      |                        ^~~~~~~~~~~
+../Core/Src/main.c:377:37: note: in expansion of macro 'STEPPER_E4_Pin'
+  377 |                         GPIO_Pin4 = STEPPER_E4_Pin;
+      |                                     ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Robotic_Hand.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\tharu\Robotic_Hand\RT_Mimic_Robotic_Hand\Robotic_Hand\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Robotic_Hand.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Robotic_Hand.elf
+ 
+arm-none-eabi-size  Robotic_Hand.elf 
+arm-none-eabi-objdump -h -S Robotic_Hand.elf  > "Robotic_Hand.list"
+   text	   data	    bss	    dec	    hex	filename
+  10332	     12	   1652	  11996	   2edc	Robotic_Hand.elf
+Finished building: default.size.stdout
+ 
+Finished building: Robotic_Hand.list
+ 

@@ -1,0 +1,8 @@
+../Core/Src/main.c:80:5:main	5
+../Core/Src/main.c:165:6:SystemClock_Config	3
+../Core/Src/main.c:213:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:246:13:MX_GPIO_Init	1
+../Core/Src/main.c:315:6:Stepper_SetHalfStepState	14
+../Core/Src/main.c:436:6:Stepper_HalfStepForward	2
+../Core/Src/main.c:449:6:Stepper_HalfStepBackward	1
+../Core/Src/main.c:468:6:Error_Handler	1
